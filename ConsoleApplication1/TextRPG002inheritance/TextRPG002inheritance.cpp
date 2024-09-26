@@ -80,6 +80,8 @@ int main()
     Player NewPlayer;
     Monster NewMonster;
     NewMonster.DamageLogic(NewPlayer);
+
+
 }
 
     
