@@ -29,16 +29,14 @@ class FightUnit : public StatusUnit
 {
 public:
 
-    int GetDamage(const FightUnit& _AttUnit) const
+    int GetDamage() const
     {
         srand(time(0));
 
-        int minAtt0 = _AttUnit.MinAtt;
-        int maxAtt0 = _AttUnit.MaxAtt;
-        int DamRage = minAtt0 + rand() % (maxAtt0 - minAtt0);
+        int DamRate = MinAtt + rand() % (MaxAtt - MinAtt);
 
         // minAtt ~ MaxAtt 사이의 숫자가 리턴되는 함수를 만드세요.
-        return DamRage;
+        return DamRate;
     }
 
     
@@ -53,13 +51,13 @@ public:
         printf_s("%s 가 %s를 공격해서 %d의 데미지를 입혔습니다.\n", _AttName, Name, _Att);
     }
 
-    const char* GetName() const
-    {
-        return Name;
-    }
 
 protected:
 
+    const char* GetName(const StatusUnit& _Stats) const
+    {
+        return Name;
+    }
 
 private:
 };
