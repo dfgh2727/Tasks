@@ -28,21 +28,17 @@ protected:
 class FightUnit : public StatusUnit
 {
 public:
-    // void DamageLogic(int _Att)
-    // class DamageData;
 
-    // AttackLogic이라고 짓고
-
-    //void AttackLogic(FightUnit& _DefUnit)
-    //{
-    //    _DefUnit.Hp -= MinAtt;
-    //}
-
-    // MinMax
-    int GetDamage() const
+    int GetDamage(const FightUnit& _AttUnit) const
     {
+        srand(time(0));
+
+        int minAtt0 = _AttUnit.MinAtt;
+        int maxAtt0 = _AttUnit.MaxAtt;
+        int DamRage = minAtt0 + rand() % (maxAtt0 - minAtt0);
+
         // minAtt ~ MaxAtt 사이의 숫자가 리턴되는 함수를 만드세요.
-        // return MinAtt + rand
+        return DamRage;
     }
 
     
@@ -86,5 +82,6 @@ int main()
     Player NewPlayer;
     Monster NewMonster;
     NewMonster.DamageLogic(NewPlayer);
+}
 
     
