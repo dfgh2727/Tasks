@@ -16,25 +16,26 @@ void UWorld::InPlayer(class UPlayer& _Player)
 
 		while (true)
 		{
-		printf_s("당신의 이름은 %s입니다. 결정하시겠습니까?\n", InputName);
-		printf_s("a. 결정\n");
-		printf_s("b. 재입력\n");
-		int Select = _getch();
-		bool IsEnd = false;
-		switch (Select)
-		{
-		case 'a':
-		case 'A':
-			IsEnd = true;
-			break;
-		case 'b':
-		case 'B':
-			IsEnd = false;
-			break;
-		default:
-			printf_s("잘못된 선택입니다. 다시 선택해주세요\n", InputName);
-			_getch();
-			break;
+			printf_s("당신의 이름은 %s입니다. 결정하시겠습니까?\n", InputName);
+			printf_s("a. 결정\n");
+			printf_s("b. 재입력\n");
+			int Select = _getch();
+			bool IsEnd = false;
+			switch (Select)
+			{
+			case 'a':
+			case 'A':
+				IsEnd = true;
+				break;
+			case 'b':
+			case 'B':
+				IsEnd = false;
+
+			default:
+				printf_s("잘못된 선택입니다. 다시 선택해주세요\n", InputName);
+				_getch();
+				break;
+			}
 		}
 
 		if (true == IsEnd)
