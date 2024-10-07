@@ -1,6 +1,6 @@
 #include "Zone.h"
 #include <conio.h>
-#include <BaseSystem/EngineDebug.h>
+#include <BaseSystem.h>
 
 void UZone::InMsgPrint()
 {
@@ -23,11 +23,7 @@ bool UZone::IsConnecting(UZone* _LinkZone)
 
 bool UZone::InterConnecting(UZone* _LinkZone)
 {
-	// 2줄이면 됩니다.
-	// 만들어주세요.
-	// 기본이 저한테 기본입니다.
-	// 무식하게 짜세요.
-	// 디버깅
+ 
 	_LinkZone;
 	this;
 

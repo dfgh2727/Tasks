@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\BaseSystem">
+      <UniqueIdentifier>{c914c22c-eb3c-4e87-b488-bab78e9e486c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TextRPG_003 but 1007.cpp">
@@ -54,6 +57,12 @@
     <ClCompile Include="..\TextRPG003ClassFile\Zone.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\BaseSystem\EngineDebug.cpp">
+      <Filter>헤더 파일\BaseSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseSystem\EngineFile.cpp">
+      <Filter>헤더 파일\BaseSystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\TextRPG003ClassFile\ContentsConst.h">
@@ -89,10 +98,22 @@
     <ClInclude Include="..\TextRPG003ClassFile\Zone.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="..\BaseSystem\EngineDebug.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseSystem\EngineFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\TextRPG003ClassFile\SaveFile.Dat" />
     <None Include="..\TextRPG003ClassFile\TextRPG003ClassFile.vcxproj" />
     <None Include="..\TextRPG003ClassFile\TextRPG003ClassFile.vcxproj.filters" />
+    <None Include="..\BaseSystem\BaseSystem.vcxproj">
+      <Filter>헤더 파일\BaseSystem</Filter>
+    </None>
+    <None Include="..\BaseSystem\BaseSystem.vcxproj.filters">
+      <Filter>헤더 파일\BaseSystem</Filter>
+    </None>
   </ItemGroup>
 </Project>
