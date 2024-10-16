@@ -24,7 +24,7 @@
     <ClInclude Include="ConsoleImage.h" />
     <ClInclude Include="ConsoleWindow.h" />
     <ClInclude Include="Enums.h" />
-    <ClInclude Include="PrevImage.h" />
+    <ClInclude Include="Prev_Image.h" />
     <ClInclude Include="Renderer.h" />
   </ItemGroup>
   <ItemGroup>
@@ -33,7 +33,7 @@
     <ClCompile Include="ConsoleImage.cpp" />
     <ClCompile Include="ConsoleWindow.cpp" />
     <ClCompile Include="Enums.cpp" />
-    <ClCompile Include="PrevImage.cpp" />
+    <ClCompile Include="Prev_Image.cpp" />
     <ClCompile Include="Renderer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

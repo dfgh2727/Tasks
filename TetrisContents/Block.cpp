@@ -8,7 +8,7 @@ void Block::BeginPlay()
 	Super::BeginPlay();
 
 	Renderer* Render = CreateDefaultSubObject();
-	Render->RenderImage.Create({ 1, 1 }, '@');
+	Render->RenderImage.Create({ 3, 5 }, '@');
 }
 
 void Block::Tick()
