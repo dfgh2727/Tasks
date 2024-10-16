@@ -20,7 +20,7 @@
       <Filter>Object\Component</Filter>
     </ClInclude>
     <ClInclude Include="PrevImage.h">
-      <Filter>Resources</Filter>
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +43,7 @@
       <Filter>Object\Component</Filter>
     </ClCompile>
     <ClCompile Include="PrevImage.cpp">
-      <Filter>Resources</Filter>
+      <Filter>Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

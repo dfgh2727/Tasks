@@ -1,7 +1,6 @@
 #pragma once
 #include <BaseSystem/EngineMath.h>
 #include "ConsoleImage.h"
-#include "PrevImage.h"
 
 
 class AActor
