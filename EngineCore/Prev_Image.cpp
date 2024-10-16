@@ -7,3 +7,4 @@ void Prev_Image::BeginPlay()
 	Renderer* RenderPrev = CreateDefaultSubObject();
 	RenderPrev->RenderImage.Create({ 3, 5 }, '+');
 }
+

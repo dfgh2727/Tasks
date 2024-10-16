@@ -29,6 +29,8 @@ public:
 		return ImageRenderer;
 	}
 
+	void LimitActorLoaction(FIntPoint _Pos);
+
 protected:
 	// ConsoleImage RenderImage;
 	// 값형으로 만들수 없다.

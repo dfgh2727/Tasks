@@ -6,6 +6,9 @@ class Prev_Image: public AActor
 public:
 
 	void BeginPlay() override;
+	
+
+private:
 
 };
 
