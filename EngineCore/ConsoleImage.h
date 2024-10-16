@@ -52,7 +52,7 @@ public:
 		return Pixels[_Y];
 	}
 
-	inline char GetPixel(int _X, int _Y)
+	inline char GetPixel(int _X, int _Y) // 이걸로 위치 갖다 쓰고 쌓아보기
 	{
 		return Pixels[_Y][_X];
 	}
