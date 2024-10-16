@@ -3,7 +3,7 @@
 
 class Prev_Image: public AActor
 {
-
+	void BeginPlay() override;
 
 };
 
