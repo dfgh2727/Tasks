@@ -1,7 +1,7 @@
 #include "TetrisInit.h"
 #include <EngineCore/ConsoleEngine.h>
 #include <EngineCore/ConsoleWindow.h>
-
+#include <EngineCore/Prev_Image.h>
 #include "Block.h"
 
 void TetrisInit::UserBeginPlay(ConsoleEngine* _MainEngine)
