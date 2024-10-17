@@ -83,7 +83,17 @@ public:
 
     ~UList()
     {
-
+        for (; BeginIter != EndIter; ++BeginIter)
+        {
+            int& Value = *BeginIter;
+            std::cout << Value << std::endl;
+        if (nullptr != NewInt)
+        {
+            delete NewInt;
+            NewInt = nullptr;
+        }
+        }
+    
     }
 
     // 자료구조 3대장
