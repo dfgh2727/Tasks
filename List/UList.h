@@ -83,15 +83,26 @@ public:
 
     ~UList()
     {
-        for (; BeginIter != EndIter; ++BeginIter)
+        for (UListNode* NodePtr; nullptr!= NodePtr; )
         {
-            int& Value = *BeginIter;
-            std::cout << Value << std::endl;
-        if (nullptr != NewInt)
-        {
-            delete NewInt;
-            NewInt = nullptr;
+            NodePtr = StartNode;
+           
+            if (nullptr != NodePtr)
+            {
+
+            }
         }
+
+        ListNode* ListNode::GetLastNode() // 이걸 쓰자(snake ListNode)
+        {
+            // this => Head
+            if (nullptr == Next)
+            {
+                return this;
+            }
+
+            // 내가 LastNode가 아니다.
+            return Next->GetLastNode();
         }
     
     }
