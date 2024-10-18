@@ -40,7 +40,6 @@ private:
 
 		~UMapNode()
 		{
-			ClearTheMap();
 		}
 
 		void ClearTheMap()
