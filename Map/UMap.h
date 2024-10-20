@@ -38,9 +38,6 @@ private:
 		UMapNode* RightChild = nullptr;
 		UPair Pair;
 
-		~UMapNode()
-		{
-		}
 
 		void ClearTheMap()
 		{
@@ -438,6 +435,20 @@ public:
 
 
 public:
+	~UMap()
+	{
+		ClearTheMap();
+	}
+
+	void ClearTheMap()
+	{
+		Root->ClearTheMap();
+
+		Root = nullptr;
+
+		return;
+	}
+
 	UMapNode* Root = nullptr;
 
 	bool isRotate()
